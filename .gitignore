@@ -2,7 +2,7 @@
 /dl
 /.auto.deps
 /.config.cmd
-/.config.old
+# /.config.old
 /..config.tmp
 # /.config
 *.depend
