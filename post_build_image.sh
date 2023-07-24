@@ -7,4 +7,4 @@ OUTPUT_LOCATION=$BUILD_DIR
 echo $OUTPUT_LOCATION
 echo $TARGET_DIR
 # test large file
-dd if=/dev/zero of=$ROOT/rootfs.ext4 bs=1M count=100
+# dd if=/dev/zero of=$ROOT/rootfs.ext4 bs=1M count=100
