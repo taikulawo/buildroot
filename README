@@ -1,5 +1,9 @@
 自动化构建可用于调试的kernel image
 
+```
+make weichao_x86_defconfig
+```
+
 Buildroot is a simple, efficient and easy-to-use tool to generate embedded
 Linux systems through cross-compilation.
 
@@ -14,7 +18,7 @@ To build and use the buildroot stuff, do the following:
 3) run 'make'
 4) wait while it compiles
 5) find the kernel, bootloader, root filesystem, etc. in output/images
-
+t
 You do not need to be root to build or run buildroot.  Have fun!
 
 Buildroot comes with a basic configuration for a number of boards. Run

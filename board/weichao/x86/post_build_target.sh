@@ -23,5 +23,8 @@ ETC=${TARGET_DIR}/etc
 # auto eth0
 # iface eth0 inet dhcp
 # EOF
-mkdir -p ${TARGET_DIR}/mnt/guest
-printf "guestroot   /mnt/guest    9p      trans=virtio,version=9p2000.L   0 0\n" >> $ETC/fstab
+# mkdir -p ${TARGET_DIR}/mnt/guest
+# printf "guestroot   /mnt/guest    9p      trans=virtio,version=9p2000.L   0 0\n" >> $ETC/fstab
+echo $(pwd)
+
+python3 ./board/weichao/x86/setup.py
