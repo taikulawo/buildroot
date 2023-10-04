@@ -1,1 +1,2 @@
 LINUX_OVERRIDE_SRCDIR=../linux/
+# UBOOT_OVERRIDE_SRCDIR=../u-boot/
