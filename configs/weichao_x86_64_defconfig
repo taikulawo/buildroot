@@ -1,3 +1,10 @@
+# x86_64 kernel 调试专用defconfig
+# 不使用buildroot编译内核，只用于生成 rootfs
+
+# 总是从linux/手动编译，全部 vscode launch 都可以指向linux/编译的内核
+
+# 其他需要生成sdcard的defconfig，才会使用BR2_LINUX_KERNEL=y
+# 
 BR2_x86_64=y
 BR2_ENABLE_DEBUG=y
 BR2_OPTIMIZE_G=y
@@ -21,5 +28,7 @@ BR2_PACKAGE_ELFUTILS=y
 BR2_PACKAGE_POPT=y
 BR2_PACKAGE_OPENSSH=y
 BR2_TARGET_ROOTFS_CPIO=y
+BR2_TARGET_ROOTFS_EXT2=y
+BR2_TARGET_ROOTFS_EXT2_4=y
 # BR2_TARGET_ROOTFS_TAR is not set
 BR2_PACKAGE_HOST_E2FSPROGS=y
