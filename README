@@ -4,7 +4,6 @@
 
 默认依赖 `../kernel` 的kernel仓库，如果你使用buildroot自己的kernel，请删除 `local.mk`的 `LINUX_OVERRIDE_SRCDIR`
 
-
 ## 构建weichao的x86 kernel
 
 我做的一个buildroot .config 和 kernel .config，默认开启了一些功能

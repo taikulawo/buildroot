@@ -10,5 +10,7 @@
 ROOT=${TARGET_DIR}/root
 OUTPUT_LOCATION=$BUILD_DIR
 ETC=${TARGET_DIR}/etc
+MNT=${TARGET_DIR}/mnt
 chmod 751 ${ETC}/init.d/S99init
 python3 ./board/weichao/x86/setup.py
+# mkdir -p ${MNT}/nextroot
