@@ -29,7 +29,9 @@ null::sysinit:/bin/ln -sf /proc/self/fd/2 /dev/stderr
 ::sysinit:/etc/init.d/rcS
 
 # 不使用getty，直接登陆root
-console::respawn:/bin/sh
+# https://unix.stackexchange.com/a/300152/353079
+# console::respawn:-/bin/sh 会导致 $HOME 是 /，而不是 /root
+console::respawn:-/bin/login -f root
 
 # Stuff to do for the 3-finger salute
 #::ctrlaltdel:/sbin/reboot
