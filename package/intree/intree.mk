@@ -5,7 +5,7 @@
 ################################################################################
 
 INTREE_VERSION = 1.0
-INTREE_SITE = ./package/intree/
+INTREE_SITE = ./package/intree
 INTREE_SITE_METHOD = local
 MAKEOPT = -C $(@D)/src CC="$(TARGET_CC)" LD="$(TARGET_LD)"
 
