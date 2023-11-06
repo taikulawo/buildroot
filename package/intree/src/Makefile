@@ -3,7 +3,9 @@ CC = gcc
 .PHONY: clean
 
 epoll: epoll.c
-	$(CC) -o '$@' '$<'
-
+	$(CC) -o ../dist/$@ '$<'
+hello: hello.c
+	$(CC) -o ../dist/$@ '$<'
 clean:
-	rm epoll
+	rm -f epoll
+	rm -f hello

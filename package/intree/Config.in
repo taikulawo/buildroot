@@ -1,4 +1,9 @@
-config BR2_PACKAGE_EPOLL
+config BR2_PACKAGE_INTREE_EPOLL
 	bool "epoll"
 	help
-	  epoll server packa
+	  simple epoll tcp server
+
+config BR2_PACKAGE_INTREE_HELLO
+    bool "hello"
+	help
+	  hello world
