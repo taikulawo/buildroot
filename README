@@ -12,6 +12,12 @@
 make weichao_x86_defconfig
 ```
 
+## 内核rootfs添加额外二进制
+
+buildroot不支持target native compiler，只能在host编译成二进制
+
+package/intree是我自己加的package，编译简单的binary，在kernel启动调试
+
 ## FAQ
 
 ### 什么时候package会重新编译
