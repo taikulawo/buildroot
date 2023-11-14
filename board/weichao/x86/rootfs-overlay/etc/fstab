@@ -1,0 +1,2 @@
+guestroot   /mnt/guest    9p      trans=virtio,version=9p2000.L   0 0
+/dev/sda       /               ext4    defaults,discard,errors=remount-ro       0       1
